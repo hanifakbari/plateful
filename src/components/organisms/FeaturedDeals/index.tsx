@@ -6,6 +6,7 @@ import { DealCard, PrimaryButton, SectionHeading } from "@/components";
 import { Assets } from "@/assets";
 import { useInView } from "@/hooks";
 import { Deal } from "@/components/molecules/DealCard";
+import Link from "next/link";
 
 const categories = ["All", "AYCE", "Set Menu", "Exclusive"] as const;
 type Category = (typeof categories)[number];
@@ -82,7 +83,7 @@ const deals: Deal[] = [
     badgeColor: "text-stone-500",
   },
   {
-    image: Assets.Food1,
+    image: Assets.Food3,
     name: "Skye Bar & Restaurant",
     cuisine: "International · Rooftop",
     location: "MH Thamrin, Jakarta",
@@ -137,13 +138,13 @@ export const FeaturedDeals = () => {
           title="Deals worth"
           highlight="celebrating"
           rightContent={
-            <a
-              href="/deals"
+            <Link
+              href="# "
               className="inline-flex items-center gap-1.5 text-sm font-semibold text-[#ff3131] hover:underline"
               aria-label="See all dining deals"
             >
               See all deals <ChevronRight size={15} aria-hidden="true" />
-            </a>
+            </Link>
           }
         />
 

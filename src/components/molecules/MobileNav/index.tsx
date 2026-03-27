@@ -63,9 +63,12 @@ export const MobileNav = ({ open, onClose }: MobileNavProps) => (
       ))}
     </nav>
 
-    {/* CTA + tagline */}
     <div className="border-t border-stone-100 px-6 pt-4 pb-10">
-      <PrimaryButton size="md" className="mb-4 w-full justify-center">
+      <PrimaryButton
+        size="md"
+        href="#featured-deals"
+        className="mb-4 w-full justify-center"
+      >
         Browse deals <ArrowRight size={15} aria-hidden="true" />
       </PrimaryButton>
       <p className="text-center text-xs text-stone-400">

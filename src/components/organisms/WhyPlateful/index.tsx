@@ -82,7 +82,7 @@ const galleryItems = [
     sub: "Bali & Bandung",
   },
   {
-    src: Assets.Food8,
+    src: Assets.Food3,
     alt: "Premium table setup at luxury restaurant",
     label: "Premium Setup",
     sub: "Exclusive Dining",

@@ -74,7 +74,7 @@ export const Navbar = () => {
           <PlatefulLogo />
           <DesktopNav />
           <div className="hidden items-center md:flex">
-            <PrimaryButton size="sm">
+            <PrimaryButton size="sm" href="#featured-deals">
               Browse deals <ArrowRight size={14} aria-hidden="true" />
             </PrimaryButton>
           </div>

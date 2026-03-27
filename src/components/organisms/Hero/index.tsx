@@ -120,7 +120,7 @@ export const Hero = () => {
           </p>
 
           <div className="mb-6 flex flex-wrap items-center gap-3">
-            <PrimaryButton size="md">
+            <PrimaryButton size="md" href="#featured-deals">
               Browse deals now <ArrowRight size={16} aria-hidden="true" />
             </PrimaryButton>
             <a
@@ -143,7 +143,7 @@ export const Hero = () => {
               {diners.map((d, i) => (
                 <div key={i} className="group relative">
                   <div className="h-7 w-7 overflow-hidden rounded-full border-2 border-white transition-all duration-200 group-hover:z-10 group-hover:scale-110 md:h-8 md:w-8">
-                    <img
+                    <Image
                       src={d.image}
                       alt={`${d.name} — Plateful user`}
                       width={32}
@@ -272,7 +272,12 @@ export const Hero = () => {
 
             <div className="flex flex-col gap-2">
               {highlights.map((r, i) => (
-                <RestaurantCard key={r.name} restaurant={r} index={i} />
+                <RestaurantCard
+                  key={r.name}
+                  restaurant={r}
+                  index={i}
+                  priority={i === 0}
+                />
               ))}
             </div>
           </div>

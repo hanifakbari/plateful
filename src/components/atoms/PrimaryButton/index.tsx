@@ -51,7 +51,7 @@ export const PrimaryButton = ({
         createRipple(e);
         onClick?.();
       }}
-      className={`relative inline-flex touch-manipulation items-center justify-center gap-2.5 overflow-hidden bg-[#ff3131] font-bold tracking-wide text-white transition-all duration-150 hover:bg-[#e02020] active:scale-95 ${sizes[size]} ${fullWidth ? "w-full" : ""} ${className} `}
+      className={`relative inline-flex cursor-pointer touch-manipulation items-center justify-center gap-2.5 overflow-hidden bg-[#ff3131] font-bold tracking-wide text-white transition-all duration-150 hover:bg-[#e02020] active:scale-95 ${sizes[size]} ${fullWidth ? "w-full" : ""} ${className} `}
     >
       {ripples.map((r) => (
         <span
