@@ -21,7 +21,7 @@ const highlights = [
     cuisine: "Indonesian · Fine Dining",
   },
   {
-    image: Assets.Food2,
+    image: Assets.Food6,
     name: "Sushi Tei SCBD",
     tag: "Set Menu",
     tagColor: "bg-rose-50 text-rose-600 border border-rose-200",
@@ -71,11 +71,11 @@ export const Hero = () => {
   return (
     <section
       aria-label="Plateful — Exclusive dining deals at top restaurants in Indonesia"
-      className="flex min-h-screen items-center px-4 py-16 md:px-16 md:py-20"
+      className="flex min-h-screen items-center bg-white px-4 py-20 md:px-10 md:py-24 lg:px-30 lg:py-28"
     >
-      <div className="flex w-full flex-col items-center justify-between gap-8 md:flex-row md:gap-12">
+      <div className="flex w-full flex-col items-center justify-between gap-10 lg:flex-row lg:gap-12">
         {/* LEFT */}
-        <div className="order-2 flex w-full flex-col md:order-1 md:w-1/2">
+        <div className="order-1 flex w-full flex-col lg:order-1 lg:w-1/2">
           <p className="mb-5 flex items-center gap-2 text-xs font-semibold tracking-widest text-stone-400 uppercase">
             <span
               className="h-1.5 w-1.5 animate-pulse rounded-full bg-green-500"
@@ -92,7 +92,7 @@ export const Hero = () => {
               <span className="relative">
                 better
                 <svg
-                  className="absolute -bottom-1 left-0 w-full md:-bottom-2"
+                  className="absolute -bottom-1 left-0 w-full lg:-bottom-2"
                   viewBox="0 0 200 12"
                   fill="none"
                   preserveAspectRatio="none"
@@ -109,7 +109,7 @@ export const Hero = () => {
             </span>
           </h1>
 
-          <p className="mb-8 max-w-md text-sm leading-relaxed font-light text-stone-500 md:text-base">
+          <p className="mb-8 max-w-lg text-sm leading-relaxed font-light text-stone-500 md:text-base">
             <strong className="font-semibold text-stone-800">Plateful</strong>{" "}
             is Indonesia&apos;s exclusive dining deals app — connecting you to{" "}
             <strong className="font-semibold text-stone-800">
@@ -200,21 +200,21 @@ export const Hero = () => {
         </div>
 
         {/* RIGHT */}
-        <div className="order-1 flex w-full flex-col gap-4 md:order-2 md:w-1/2">
-          <div className="relative h-56 w-full overflow-hidden rounded-3xl bg-stone-100 md:h-80">
+        <div className="order-2 flex w-full flex-col gap-4 lg:order-2 lg:w-1/2">
+          <div className="relative h-64 w-full overflow-hidden rounded-3xl bg-stone-100 md:h-80 lg:h-96">
             <Image
               src={Assets.Hero}
               alt="Exclusive dining experience at premium restaurants in Indonesia with Plateful"
               fill
               priority
-              sizes="(max-width: 768px) 100vw, 50vw"
+              sizes="(max-width: 1024px) 100vw, 50vw"
               className="object-cover"
             />
             <div
               className="absolute inset-0 bg-linear-to-t from-black/60 via-black/10 to-transparent"
               aria-hidden="true"
             />
-            <div className="absolute bottom-3 left-3 flex items-center gap-2 rounded-xl border border-white/20 bg-white/10 px-3 py-1.5 backdrop-blur-md md:bottom-4 md:left-4">
+            <div className="absolute bottom-3 left-3 flex items-center gap-2 rounded-xl border border-white/20 bg-white/10 px-3 py-1.5 backdrop-blur-md">
               <span
                 className="h-2 w-2 animate-pulse rounded-full bg-green-400"
                 aria-hidden="true"
