@@ -76,12 +76,12 @@ test.describe("Plateful Landing Page", () => {
       await page.locator("#featured-deals").scrollIntoViewIfNeeded();
       const section = page.locator("#featured-deals");
 
-      await page.getByRole("tab", { name: "AYCE" }).click();
+      await page.getByRole("button", { name: "AYCE" }).click();
       await expect(
         section.getByRole("heading", { name: "Plataran Menteng" }),
       ).toBeVisible();
 
-      await page.getByRole("tab", { name: "Set Menu" }).click();
+      await page.getByRole("button", { name: "Set Menu" }).click();
       await expect(
         section.getByRole("heading", { name: "Sushi Tei SCBD" }),
       ).toBeVisible();
