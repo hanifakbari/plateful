@@ -1,36 +1,125 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Plateful — Exclusive Dining Deals in Indonesia
+
+A marketing landing page built with Next.js, TypeScript, and Tailwind CSS for **Plateful** — Indonesia's exclusive dining deals app connecting diners to 1,000+ premium restaurants across Jakarta, Bali & Bandung.
+
+**Live Demo:** [plateful-hazel.vercel.app](https://plateful-hazel.vercel.app)
+
+---
+
+## Tech Stack
+
+- **Framework:** Next.js 16 (App Router)
+- **Language:** TypeScript
+- **Styling:** Tailwind CSS
+- **Icons:** Lucide React
+- **Testing:** Jest + React Testing Library, Playwright
+
+---
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+- Node.js 20+
+- Yarn
+
+### Installation
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+# Clone the repository
+git clone https://github.com/hanifakbari/plateful.git
+cd plateful
+
+# Install dependencies
+yarn install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Development
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+yarn dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-## Learn More
+### Production Build
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+yarn build
+yarn start
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Testing
 
-## Deploy on Vercel
+### Unit & Component Tests (Jest + React Testing Library)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```bash
+yarn test
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Covers:
+
+- `PrimaryButton` — render, size classes, click handler
+- `DealCard` — render, discount calculation, bookmark toggle, visibility state
+- `Navbar` — logo, nav links, mobile drawer open/close
+
+### End-to-End Tests (Playwright)
+
+```bash
+yarn playwright test
+```
+
+Runs across **5 browsers:** Chromium, Firefox, WebKit, Mobile Chrome, Mobile Safari.
+
+Covers:
+
+- Navbar scroll hide/show behavior
+- Mobile drawer open/close
+- Hero section render
+- Featured deals filter tabs
+- Bookmark toggle
+- Anchor navigation
+- Responsive layout
+
+```bash
+# View test report
+yarn playwright show-report
+```
+
+---
+
+## Project Structure
+
+```
+src/
+├── app/
+│   ├── layout.tsx        # Root layout with SEO metadata
+│   └── page.tsx          # Main landing page
+├── assets/               # Images, icons, static assets
+├── components/
+│   ├── atoms/            # PrimaryButton, AnimatedCounter, EyebrowPill, SectionHeading
+│   ├── molecules/        # DealCard, CuisineCard, StepCard, TestimonialCard, etc.
+│   └── organisms/        # Hero, Navbar, Footer, and all page sections
+├── hooks/
+│   └── index.ts          # useInView hook
+└── __tests__/            # Jest component tests
+tests/                    # Playwright E2E tests
+```
+
+---
+
+## Sections
+
+| Section          | Description                                |
+| ---------------- | ------------------------------------------ |
+| Navbar           | Fixed, scroll hide/show, mobile drawer     |
+| Hero             | Headline, stats, trending restaurants      |
+| Why Plateful     | Feature cards with 3D hover, image gallery |
+| How It Works     | 3-step process with interactive mockups    |
+| Featured Deals   | Filterable deal cards with bookmark        |
+| Popular Cuisines | Cuisine category cards                     |
+| Testimonials     | Horizontal scroll reviews                  |
+| App Download     | CTA with App Store & Google Play           |
+| Footer           | Navigation links                           |
