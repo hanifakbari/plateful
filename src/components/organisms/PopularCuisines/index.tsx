@@ -71,7 +71,7 @@ export const PopularCuisines = () => {
       ref={ref}
       id="popular-cuisines"
       aria-labelledby="popular-cuisines-heading"
-      className="bg-white px-4 py-20 md:px-10 md:py-24 lg:px-16 lg:py-28"
+      className="bg-[#FAFAF9] px-4 py-20 md:px-10 md:py-24 lg:px-16 lg:py-28"
     >
       <div className="mx-auto max-w-6xl">
         <SectionHeading

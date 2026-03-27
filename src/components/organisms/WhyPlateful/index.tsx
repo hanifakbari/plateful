@@ -237,7 +237,7 @@ export const WhyPlateful = () => {
       ref={ref}
       id="why-plateful"
       aria-labelledby="why-plateful-heading"
-      className="relative scroll-mt-20 overflow-hidden bg-white px-4 py-20 md:px-10 md:py-24 lg:px-16 lg:py-28"
+      className="relative scroll-mt-20 overflow-hidden bg-[#FAFAF9] px-4 py-20 md:px-10 md:py-24 lg:px-16 lg:py-28"
     >
       <div className="mx-auto max-w-6xl">
         <SectionHeading

@@ -256,7 +256,7 @@ export const HowItWorks = () => {
       ref={ref}
       id="how-it-works"
       aria-labelledby="how-it-works-heading"
-      className="relative overflow-hidden bg-white px-4 py-20 md:px-10 md:py-24 lg:px-16 lg:py-28"
+      className="relative overflow-hidden bg-[#FAFAF9] px-4 py-20 md:px-10 md:py-24 lg:px-16 lg:py-28"
       itemScope
       itemType="https://schema.org/HowTo"
     >

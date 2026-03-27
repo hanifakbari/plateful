@@ -58,7 +58,7 @@ export const Footer = () => {
   return (
     <footer
       aria-label="Plateful footer"
-      className="bg-white px-4 pt-14 md:px-10 lg:px-16"
+      className="bg-[#FAFAF9] px-4 pt-14 md:px-10 lg:px-16"
     >
       <div className="mx-auto max-w-6xl">
         {/* Top — logo + newsletter + links */}

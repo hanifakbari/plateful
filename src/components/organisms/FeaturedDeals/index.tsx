@@ -124,7 +124,7 @@ export const FeaturedDeals = () => {
       ref={ref}
       id="featured-deals"
       aria-labelledby="featured-deals-heading"
-      className="bg-white px-4 py-20 md:px-10 md:py-24 lg:px-16 lg:py-28"
+      className="bg-[#FAFAF9] px-4 py-20 md:px-10 md:py-24 lg:px-16 lg:py-28"
     >
       <script
         type="application/ld+json"
@@ -190,7 +190,7 @@ export const FeaturedDeals = () => {
         </div>
 
         <div
-          className={`mt-12 flex flex-col items-center justify-between gap-4 rounded-3xl border border-stone-100 bg-stone-50 px-7 py-6 transition-all delay-300 duration-700 sm:flex-row ${
+          className={`mt-12 flex flex-col items-center justify-between gap-4 rounded-3xl border border-stone-100 bg-white px-7 py-6 transition-all delay-300 duration-700 sm:flex-row ${
             isInView ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"
           }`}
         >

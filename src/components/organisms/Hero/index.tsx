@@ -71,7 +71,7 @@ export const Hero = () => {
   return (
     <section
       aria-label="Plateful — Exclusive dining deals at top restaurants in Indonesia"
-      className="flex min-h-screen items-center bg-white px-4 py-20 md:px-10 md:py-24 lg:px-30 lg:py-28"
+      className="flex min-h-screen items-center bg-[#FAFAF9] px-4 py-20 md:px-10 md:py-24 lg:px-30 lg:py-28"
     >
       <div className="flex w-full flex-col items-center justify-between gap-10 lg:flex-row lg:gap-12">
         {/* LEFT */}

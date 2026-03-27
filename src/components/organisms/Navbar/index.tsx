@@ -65,7 +65,7 @@ export const Navbar = () => {
           visible || mobileOpen ? "translate-y-0" : "-translate-y-full"
         } ${
           scrolled
-            ? "border-b border-stone-100 bg-white/90 shadow-sm backdrop-blur-md"
+            ? "border-b border-stone-100 bg-[#FAFAF9] shadow-sm backdrop-blur-md"
             : "bg-transparent"
         }`}
         aria-label="Site header"
@@ -84,7 +84,7 @@ export const Navbar = () => {
               onClick={() => setMobileOpen(true)}
               aria-label="Open menu"
               aria-expanded={mobileOpen}
-              className="flex h-9 w-9 items-center justify-center rounded-xl border border-stone-200 bg-white text-stone-600 transition-colors hover:border-stone-300 md:hidden"
+              className="flex h-9 w-9 items-center justify-center rounded-xl border border-stone-200 bg-[#FAFAF9] text-stone-600 transition-colors hover:border-stone-300 md:hidden"
             >
               <Menu size={18} />
             </button>

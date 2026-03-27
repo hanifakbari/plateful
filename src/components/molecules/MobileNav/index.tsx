@@ -20,7 +20,7 @@ interface MobileNavProps {
 
 export const MobileNav = ({ open, onClose }: MobileNavProps) => (
   <div
-    className={`fixed inset-0 z-60 flex flex-col bg-white transition-all duration-300 ease-out md:hidden ${
+    className={`fixed inset-0 z-60 flex flex-col bg-[#FAFAF9] transition-all duration-300 ease-out md:hidden ${
       open ? "pointer-events-auto opacity-100" : "pointer-events-none opacity-0"
     }`}
     inert={!open ? true : undefined}

@@ -14,7 +14,7 @@ export const AppDownload = () => {
       ref={ref}
       id="download"
       aria-labelledby="app-download-heading"
-      className="bg-white px-4 py-20 md:px-10 md:py-24 lg:px-16 lg:py-14"
+      className="bg-[#FAFAF9] px-4 py-20 md:px-10 md:py-24 lg:px-16 lg:py-14"
     >
       <div
         className={`relative mx-auto max-w-6xl overflow-hidden rounded-[2.5rem] bg-stone-900 transition-all duration-700 ${
