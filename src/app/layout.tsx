@@ -22,10 +22,11 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "Plateful" }],
   creator: "Plateful",
+  metadataBase: new URL("https://plateful-hazel.vercel.app/"),
   openGraph: {
     type: "website",
     locale: "en_ID",
-    url: "",
+    url: "https://plateful-hazel.vercel.app/",
     siteName: "Plateful",
     title: "Plateful — Exclusive Dining Deals in Indonesia",
     description:
