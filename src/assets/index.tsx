@@ -1,1 +1,1 @@
-// export * as Assets from "./images";
+export * as Assets from "./images";
