@@ -21,7 +21,6 @@ export const AppDownload = () => {
           isInView ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"
         }`}
       >
-        {/* Background accents */}
         <div
           className="pointer-events-none absolute inset-0"
           aria-hidden="true"
@@ -34,7 +33,6 @@ export const AppDownload = () => {
           <div className="absolute top-1/2 left-12 h-7 w-7 rotate-45 rounded-lg bg-[#ff3131]/20" />
         </div>
 
-        {/* Main layout */}
         <div className="relative z-10 flex flex-col lg:flex-row lg:items-end">
           {/* LEFT — text */}
           <div className="flex flex-col px-8 pt-12 pb-8 md:px-14 md:pt-16 md:pb-10 lg:flex-1 lg:pb-14">
@@ -161,7 +159,6 @@ export const AppDownload = () => {
                 className="w-full rounded-t-4xl object-cover object-top"
               />
 
-              {/* Badge — booking confirmed */}
               <div className="absolute top-8 left-24 w-40 rounded-2xl border border-stone-100 bg-white px-3 py-2 shadow-xl md:top-10 md:left-20 lg:top-20 lg:left-36">
                 <div className="flex items-center gap-2">
                   <div className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-emerald-100">
