@@ -29,7 +29,6 @@ jest.mock("@/assets", () => ({
 describe("Navbar", () => {
   it("renders logo", () => {
     render(<Navbar />);
-    // Logo appears in both desktop navbar and mobile drawer — use getAllBy
     const logos = screen.getAllByAltText("Plateful logo");
     expect(logos.length).toBeGreaterThan(0);
   });
