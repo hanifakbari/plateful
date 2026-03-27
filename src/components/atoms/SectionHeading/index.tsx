@@ -9,6 +9,7 @@ interface SectionHeadingProps {
   title: string;
   highlight: string;
   description?: string;
+  rightContent?: ReactNode;
   descriptionAlign?: "left" | "right";
   id: string;
 }
@@ -18,6 +19,7 @@ export const SectionHeading = ({
   title,
   highlight,
   description,
+  rightContent,
   descriptionAlign = "left",
   id,
 }: SectionHeadingProps) => {
@@ -53,7 +55,9 @@ export const SectionHeading = ({
         </h2>
       </div>
 
-      {description && (
+      {rightContent ? (
+        <div className="lg:max-w-sm lg:text-right">{rightContent}</div>
+      ) : description ? (
         <p
           className={`max-w-xs text-sm leading-relaxed font-light text-stone-400 ${
             descriptionAlign === "right" ? "lg:text-right" : ""
@@ -61,7 +65,7 @@ export const SectionHeading = ({
         >
           {description}
         </p>
-      )}
+      ) : null}
     </header>
   );
 };

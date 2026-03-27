@@ -1,4 +1,4 @@
-import { Hero, HowItWorks, WhyPlateful } from "@/components";
+import { FeaturedDeals, Hero, HowItWorks, WhyPlateful } from "@/components";
 
 export default function Home() {
   return (
@@ -6,6 +6,7 @@ export default function Home() {
       <Hero />
       <WhyPlateful />
       <HowItWorks />
+      <FeaturedDeals />
     </main>
   );
 }
