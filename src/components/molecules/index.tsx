@@ -3,3 +3,4 @@ export { RestaurantCard } from "./RestaurantCard";
 export { StepCard } from "./StepCard";
 export { CtaSection } from "./CtaSection";
 export { DealCard } from "./DealCard";
+export { CuisineCard } from "./CuisineCard";
