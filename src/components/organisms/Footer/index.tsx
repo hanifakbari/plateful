@@ -11,9 +11,9 @@ const links = [
     items: [
       { label: "Featured Deals", href: "#featured-deals" },
       { label: "Popular Cuisines", href: "#popular-cuisines" },
-      { label: "Jakarta", href: "/city/jakarta" },
-      { label: "Bali", href: "/city/bali" },
-      { label: "Bandung", href: "/city/bandung" },
+      { label: "Jakarta", href: "# " },
+      { label: "Bali", href: "# " },
+      { label: "Bandung", href: "# " },
     ],
   },
   {
@@ -39,17 +39,17 @@ const links = [
 const socials = [
   {
     icon: Assets.Instagram,
-    href: "instargram.com",
+    href: "https://instagram.com",
     label: "Follow Plateful on Instagram",
   },
   {
     icon: Assets.X,
-    href: "x.com",
+    href: "https://x.com",
     label: "Follow Plateful on Twitter",
   },
   {
     icon: Assets.Youtube,
-    href: "youtube.com",
+    href: "https://youtube.com",
     label: "Follow Plateful on YouTube",
   },
 ];
