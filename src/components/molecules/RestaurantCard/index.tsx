@@ -16,10 +16,15 @@ interface Restaurant {
 
 interface RestaurantCardProps {
   restaurant: Restaurant;
+  priority?: boolean;
   index: number;
 }
 
-export const RestaurantCard = ({ restaurant, index }: RestaurantCardProps) => {
+export const RestaurantCard = ({
+  restaurant,
+  index,
+  priority,
+}: RestaurantCardProps) => {
   const [imageLoaded, setImageLoaded] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
 
@@ -58,6 +63,7 @@ export const RestaurantCard = ({ restaurant, index }: RestaurantCardProps) => {
           alt={`${restaurant.name} — ${restaurant.cuisine}`}
           width={44}
           height={44}
+          priority={priority}
           onLoad={() => setImageLoaded(true)}
           className={`h-full w-full object-cover transition-transform duration-300 group-hover:scale-110 ${
             imageLoaded ? "opacity-100" : "opacity-0"

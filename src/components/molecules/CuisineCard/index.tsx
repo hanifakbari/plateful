@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Image, { StaticImageData } from "next/image";
 import { ArrowRight } from "lucide-react";
+import { PrimaryButton } from "@/components/atoms";
 
 export interface Cuisine {
   image: string | StaticImageData;
@@ -41,7 +42,7 @@ export const CuisineCard = ({ cuisine, index, isInView }: CuisineCardProps) => {
           alt={`${cuisine.name} cuisine — dining deals in Indonesia`}
           fill
           sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-          loading="lazy"
+          priority={index < 3}
           className={`object-cover transition-transform duration-500 ${
             hovered ? "scale-105" : "scale-100"
           }`}
@@ -77,14 +78,14 @@ export const CuisineCard = ({ cuisine, index, isInView }: CuisineCardProps) => {
           {cuisine.description}
         </p>
 
-        <div className="mt-4 flex items-center gap-1.5 text-[0.75rem] font-semibold text-stone-400 transition-colors duration-300 group-hover:text-[#ff3131]">
+        <PrimaryButton size="md" fullWidth={true} className="mt-4">
           Browse deals
           <ArrowRight
             size={13}
             className={`transition-transform duration-300 ${hovered ? "translate-x-0.5" : ""}`}
             aria-hidden="true"
           />
-        </div>
+        </PrimaryButton>
       </div>
     </article>
   );

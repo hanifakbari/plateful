@@ -57,7 +57,7 @@ export const DealCard = ({ deal, index, isInView }: DealCardProps) => {
           alt={`${deal.name} — ${deal.cuisine} in ${deal.location}`}
           fill
           sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-          loading="lazy"
+          priority={index < 3}
           className={`object-cover transition-transform duration-700 ${
             hovered ? "scale-105" : "scale-100"
           }`}
