@@ -8,6 +8,7 @@ interface PrimaryButtonProps {
   onClick?: () => void;
   className?: string;
   size?: "sm" | "md" | "lg";
+  disabled?: boolean;
   fullWidth?: boolean;
 }
 
@@ -17,15 +18,24 @@ export const PrimaryButton = ({
   onClick,
   className = "",
   size = "md",
+  disabled = false,
   fullWidth = false,
 }: PrimaryButtonProps) => {
-  const [ripples, setRipples] = useState<Array<{ x: number; y: number; id: number }>>([]);
+  const [ripples, setRipples] = useState<
+    Array<{ x: number; y: number; id: number }>
+  >([]);
 
   const createRipple = useCallback((e: React.MouseEvent<HTMLElement>) => {
     const rect = e.currentTarget.getBoundingClientRect();
     const id = Date.now();
-    setRipples(prev => [...prev, { x: e.clientX - rect.left, y: e.clientY - rect.top, id }]);
-    setTimeout(() => setRipples(prev => prev.filter(r => r.id !== id)), 600);
+    setRipples((prev) => [
+      ...prev,
+      { x: e.clientX - rect.left, y: e.clientY - rect.top, id },
+    ]);
+    setTimeout(
+      () => setRipples((prev) => prev.filter((r) => r.id !== id)),
+      600,
+    );
   }, []);
 
   const sizes = {
@@ -37,27 +47,20 @@ export const PrimaryButton = ({
   return (
     <a
       href={href}
-      onClick={(e) => { createRipple(e); onClick?.(); }}
-      className={`
-        relative inline-flex items-center justify-center gap-2.5 overflow-hidden
-        font-bold tracking-wide
-        bg-[#ff3131] text-white
-        hover:bg-[#e02020]
-        transition-all duration-150
-        active:scale-95 touch-manipulation
-        ${sizes[size]}
-        ${fullWidth ? "w-full" : ""}
-        ${className}
-      `}
+      onClick={(e) => {
+        createRipple(e);
+        onClick?.();
+      }}
+      className={`relative inline-flex touch-manipulation items-center justify-center gap-2.5 overflow-hidden bg-[#ff3131] font-bold tracking-wide text-white transition-all duration-150 hover:bg-[#e02020] active:scale-95 ${sizes[size]} ${fullWidth ? "w-full" : ""} ${className} `}
     >
-      {ripples.map(r => (
+      {ripples.map((r) => (
         <span
           key={r.id}
-          className="absolute rounded-full bg-white/25 animate-ping pointer-events-none"
+          className="pointer-events-none absolute animate-ping rounded-full bg-white/25"
           style={{ left: r.x - 10, top: r.y - 10, width: 20, height: 20 }}
         />
       ))}
       {children}
     </a>
   );
-}
+};
