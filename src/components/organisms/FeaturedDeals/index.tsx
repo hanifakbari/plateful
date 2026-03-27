@@ -153,15 +153,12 @@ export const FeaturedDeals = () => {
           className={`mb-8 flex flex-wrap items-center gap-2 transition-all delay-100 duration-700 ${
             isInView ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"
           }`}
-          role="tablist"
           aria-label="Filter deals by type"
         >
           {categories.map((cat) => (
             <button
               key={cat}
               onClick={() => setActive(cat)}
-              role="tab"
-              aria-selected={active === cat}
               className={`rounded-full border px-4 py-2 text-xs font-bold transition-all duration-200 ${
                 active === cat
                   ? "border-[#ff3131] bg-[#ff3131] text-white shadow-sm"
@@ -176,7 +173,6 @@ export const FeaturedDeals = () => {
         {/* Deal cards */}
         <div
           className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3"
-          role="list"
           aria-label="Featured dining deals in Indonesia"
         >
           {filtered.map((deal, i) => (

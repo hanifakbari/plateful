@@ -277,7 +277,6 @@ export const HowItWorks = () => {
         {/* Step cards */}
         <div
           className="mb-14 grid grid-cols-1 gap-5 md:grid-cols-3 lg:gap-6"
-          role="list"
           aria-label="How Plateful works — 3 steps"
         >
           {steps.map((step, i) => (

@@ -252,7 +252,6 @@ export const WhyPlateful = () => {
         <HorizontalGallery isInView={isInView} />
         <div
           className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4 lg:gap-6"
-          role="list"
           aria-label="Why choose Plateful"
         >
           {features.map((f, i) => (

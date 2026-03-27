@@ -152,7 +152,6 @@ export const Testimonials = () => {
             className="scrollbar-hide flex gap-4 overflow-x-auto pb-4"
             style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
             aria-label="Customer testimonials"
-            role="list"
           >
             {testimonials.map((t, i) => (
               <div key={i} role="listitem">
