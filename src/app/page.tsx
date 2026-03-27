@@ -14,6 +14,8 @@ export default function Home() {
       <HowItWorks />
       <FeaturedDeals />
       <PopularCuisines />
+      <Testimonials />
+      <AppDownload />
     </main>
   );
 }
