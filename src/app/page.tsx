@@ -1,8 +1,10 @@
 import {
+  AppDownload,
   FeaturedDeals,
   Hero,
   HowItWorks,
   PopularCuisines,
+  Testimonials,
   WhyPlateful,
 } from "@/components";
 
