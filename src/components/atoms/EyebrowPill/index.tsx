@@ -3,7 +3,6 @@ import { ReactNode } from "react";
 interface EyebrowPillProps {
   icon: ReactNode;
   label: string;
-  /** Optional: override bg. Default white */
   className?: string;
 }
 
