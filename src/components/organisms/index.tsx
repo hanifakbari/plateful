@@ -1,3 +1,4 @@
+export { Navbar } from "./Navbar";
 export { Hero } from "./Hero";
 export { WhyPlateful } from "./WhyPlateful";
 export { HowItWorks } from "./HowItWorks";
