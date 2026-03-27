@@ -81,7 +81,7 @@ export const AppDownload = () => {
             {/* Store buttons */}
             <div className="mb-6 flex flex-wrap items-center gap-3">
               <Link
-                href="#"
+                href="# "
                 className="flex items-center gap-3 rounded-2xl border border-white/15 bg-white/10 px-5 py-3.5 transition-all duration-300 hover:border-white/25 hover:bg-white/15 active:scale-95"
                 aria-label="Download Plateful on App Store"
               >
@@ -103,7 +103,7 @@ export const AppDownload = () => {
               </Link>
 
               <Link
-                href="#"
+                href="# "
                 className="flex items-center gap-3 rounded-2xl border border-white/15 bg-white/10 px-5 py-3.5 transition-all duration-300 hover:border-white/25 hover:bg-white/15 active:scale-95"
                 aria-label="Download Plateful on Google Play"
               >
