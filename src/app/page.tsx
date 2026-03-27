@@ -1,6 +1,7 @@
 import {
   AppDownload,
   FeaturedDeals,
+  Footer,
   Hero,
   HowItWorks,
   PopularCuisines,
@@ -18,6 +19,7 @@ export default function Home() {
       <PopularCuisines />
       <Testimonials />
       <AppDownload />
+      <Footer />
     </main>
   );
 }
