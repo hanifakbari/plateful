@@ -70,6 +70,7 @@ export const Footer = () => {
               alt="Plateful logo"
               width={0}
               height={0}
+              priority
               className="h-14 w-auto"
             />
             <p className="mt-4 max-w-xs text-sm leading-relaxed font-light text-stone-400">
