@@ -150,7 +150,6 @@ export const AppDownload = () => {
 
           {/* RIGHT — mockup, all screen sizes */}
           <div className="relative flex justify-center px-8 pb-0 md:px-14 lg:w-72 lg:shrink-0 lg:px-0 xl:w-80">
-            {/* Phone image — anchored to bottom */}
             <div className="relative w-48 md:w-56 lg:w-full">
               <Image
                 src={Assets.AppMockup}
@@ -158,6 +157,7 @@ export const AppDownload = () => {
                 width={280}
                 height={520}
                 sizes="(max-width: 768px) 192px, (max-width: 1024px) 224px, 280px"
+                priority
                 className="w-full rounded-t-4xl object-cover object-top"
               />
 

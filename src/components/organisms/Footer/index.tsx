@@ -63,14 +63,14 @@ export const Footer = () => {
       <div className="mx-auto max-w-6xl">
         {/* Top — logo + newsletter + links */}
         <div className="mb-12 grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-5">
-          {/* Brand col */}
+          {" "}
           <div className="lg:col-span-2">
             <Image
               src={Assets.Plateful}
               alt="Plateful logo"
-              width={150}
-              height={150}
-              className="mb-4"
+              width={0}
+              height={0}
+              className="h-14 w-auto"
             />
             <p className="mt-4 max-w-xs text-sm leading-relaxed font-light text-stone-400">
               Indonesia&apos;s exclusive dining deals app. Discover, book, and
@@ -116,8 +116,6 @@ export const Footer = () => {
               ))}
             </div>
           </div>
-
-          {/* Link cols */}
           {links.map((col) => (
             <div key={col.heading}>
               <p className="mb-4 text-xs font-bold tracking-widest text-stone-700 uppercase">
@@ -139,10 +137,8 @@ export const Footer = () => {
           ))}
         </div>
 
-        {/* Divider */}
         <div className="border-t border-stone-100" />
 
-        {/* Bottom */}
         <div className="w-full py-4">
           <div className="flex justify-center">
             <p className="flex items-center gap-2 text-xs text-stone-400">
