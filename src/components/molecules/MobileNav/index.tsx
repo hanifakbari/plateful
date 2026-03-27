@@ -31,6 +31,7 @@ export const MobileNav = ({ open, onClose }: MobileNavProps) => (
         alt="Plateful logo"
         width={0}
         height={0}
+        priority
         className="h-12 w-auto"
       />
       <button
