@@ -11,8 +11,12 @@ export { default as Food5 } from "./food-image-05.webp";
 export { default as Food6 } from "./food-image-06.webp";
 export { default as Food7 } from "./food-image-07.webp";
 export { default as Food8 } from "./food-image-08.webp";
-export { default as Food9 } from "./food-image-08.webp";
+export { default as Food9 } from "./food-image-09.webp";
 
 export { default as PlayStore } from "./playStore-icon.svg";
 export { default as AppStore } from "./appStore-icon.svg";
 export { default as AppMockup } from "./appMockup-image.png";
+
+export { default as Instagram } from "./instagram-icon.svg";
+export { default as X } from "./x-icon.svg";
+export { default as Youtube } from "./youtube-icon.svg";
